@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+
+header nav picture img{
+    width: 80px;
+    height: 80px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 3pc;
+}
+
+
+
+.zoom {
+    transition: transform 2s;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+
+body {
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.color1  {
+    height: 100vh;
+    background-color: aqua;
+    
+}
+
+.color2 {
+    background-color: rgb(194, 42, 42);
+    height: 100vh;
+
+}
+
+.color3 {
+    background-color: blue;
+    height: 100vh;
+
+}
+
+main div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
