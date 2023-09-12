@@ -1,76 +1,192 @@
 *{
     margin: 0;
     padding: 0;
-    list-style: none;
+    box-sizing: border-box;
     text-decoration: none;
-
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-header {
-    position: sticky;
-    top: 0;
-    justify-content: center;
-    background-color: whitesmoke;
-}
-
-header nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 20px;
-}
-
-
-header nav picture img{
-    width: 80px;
-    height: 80px;
-}
-
-header nav ul {
-    display: flex;
-    justify-content: space-between;
-    gap: 3pc;
-}
-
-
-
-.zoom {
-    transition: transform 2s;
-}
-
-.zoom:hover {
-    transform: scale(1.5);
-}
-
-body {
-    font-family: 'Sedgwick Ave Display', cursive;
-}
-
-.color1  {
-    height: 100vh;
-    background-color: aqua;
+    list-style: none;
     
 }
 
-.color2 {
-    background-color: rgb(194, 42, 42);
-    height: 100vh;
+
+.boton{
+    margin: 10px;
+}
+
+.lbl-switch {
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+    background-color: #aaa;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
 
 }
 
-.color3 {
-    background-color: blue;
-    height: 100vh;
+#btn-switch:checked~ .lbl-switch {
+   background-color: #61a0ff; 
 
 }
 
-main div {
+.lbl-switch::after{
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    border-radius: 100px;
+    top: 4px;
+    left: 5px;
+    transition: 0.3s;
+}
+
+#btn-switch:checked~ .lbl-switch::after{
+    left: 28px;
+    
+}
+
+#btn-switch{
+    display: none;
+}
+
+
+
+header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 200px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 30px;
+    background-color: white;
+}
 
+.fotoyboton {
+    display: flex;
+    border: solid 2px black;
+    align-items: center;
+    margin: 1px;
+    padding: 8px;
+    
+}
+
+.fotoyboton img {
+    width: 160px;
+    height: 160px;
+    border-radius: 100px;   
+    border: solid 2px ;
+    
+    
+}
+
+
+.intereses {
+    background-color: #61a0ff;
+    
+    height: 1200px;
+}
+
+.contacto {
+    background-color: aqua;
+   
+    height: 1200px;
+}
+
+.estudios {
+    background-color: black;
+    
+    height: 1200px;
+}
+
+.secciones {
+    border: solid 2px black;
+    padding: 64px;
+}
+
+.secciones ul {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.secciones ul img{
+    width: 32px;
+    height: 32px;
+}
+
+.secciones ul a{
+    display: flex;
+    gap: 2pc;
+}
+
+.cont {
+    background-image: url(/img/fondocontacto.jpeg)  ;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 2000px;
+    right: 0;
+    width: 77.5vw;
+    height: 1000px;
+    display: block;
+    align-items: center;
+    padding: 350px;
+    border: solid 2px black;
+    gap: 100px;
+}
+
+.inte {
+    background-image: url(/img/fondointereses) ;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 77.5vw;
+    height: 1000px;
+    display: block;
+    align-items: center;
+    padding: 350px;
+    border: solid 2px black;
+
+}
+
+.estu {
+    background-image: url(/img/fondoestudios.webp);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 1000px;
+    right: 0;
+    width: 77.5vw;
+    height: 1000px;
+    display: block;
+    align-items: center;
+    padding: 350px;
+    border: solid 2px black;
+
+}
+
+.secciones img {
+    border-radius: 100px;
+    border: solid 2px black;
+}
+
+
+.logoinstagram {
+    width: 32px;
+    height: 32px;
+}
+
+
+.logoface {
+    width: 32px;
+    height: 32px;
+}
+
+.logotwiter {
+    width: 32px;
+    height: 32px;
 }
