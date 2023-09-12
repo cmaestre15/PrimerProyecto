@@ -4,51 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Primer Proyecto</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <picture>
-          <img class="zoom" src="/img/Logo.png" alt="Logo de carlos maestre" />
-        </picture>
-        <ul>
-          <a href="#intereses">
-            <li class="zoom">Intereses</li>
-          </a>
+      <div class="fotoyboton">
+        <div>
+          <img src="/img/yo2.jpg" alt="" />
+        </div>
+        <div class="boton">
+          <input type="checkbox" id="btn-switch" />
+          <label for="btn-switch" class="lbl-switch"></label>
+        </div>
+      </div>
 
-          <a href="#estudios">
-            <li class="zoom">Estudios</li>
-          </a>
-          <a href="#contacto">
-            <li class="zoom">Contacto</li>
-          </a>
-        </ul>
-      </nav>
+      <div class="secciones">
+        <div>
+          <ul>
+            <a href="#intereses">
+              <li class="zoom">Intereses</li>
+              <img src="/img/intereses.jpg" alt="" />
+            </a>
+
+            <a href="#estudios">
+              <li class="zoom">Estudios</li>
+              <img src="/img/estudios.jpg" alt="" />
+            </a>
+            <a href="#contacto">
+              <li class="zoom">Contacto</li>
+              <img src="/img/contacto.jpg" alt="" />
+            </a>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
-        <h2>Intereses</h2>
-      <div id="intereses" class="color1">
+      <div class="inte" id="intereses">
 
-
-        <p>Practico baloncesto en mis tiempos libres</p>    
-
-            <video src="/video/20190413_180256.mp4" width="640" height="360" controls>
-            
-            </video>
-            <p>Ejercicio una vez al mes</p> 
-            <video src="/video/B073D2A1-1FF7-4AAD-93B9-5D1178562605.mp4" width="640" height="360" controls>
-            </video>    
       </div>
-
-      <div id="estudios" class="color2">
-        <h2>Estudios</h2>
-        <p></p>
+      <div class="estu" id="estudios">
+        <p>Ingenieria De Sistemas</p>
+        <p>Universidad Autonoma Del Caribe</p>
+        <p>Abril 2008</p>
       </div>
+      <div class="cont" id="contacto">
+        <p>
+        <a href="https://www.instagram.com/cmaestre8615/">Instagram</a>
+        <img class="logoinstagram" src="/img/logoinstagram.jpg" alt="">
+      </p>
+       <p> 
+        <a href="https://www.facebook.com/carlos.maestrejimenez.1/">Facebook</a>
+        <img class="logoface" src="/img/logoface.png" alt="">
+      </p>
+      <p> 
+        <a href="https://twitter.com/camaestre15">Twitter</a>
+        <img class="logoface" src="/img/logotwiter.png" alt="">
+      </p>
 
-      <div id="contacto" class="color3">
-        <h2>Contacto</h2>
-        <p></p>
       </div>
     </main>
   </body>
